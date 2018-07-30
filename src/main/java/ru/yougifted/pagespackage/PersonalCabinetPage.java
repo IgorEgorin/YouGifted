@@ -131,11 +131,15 @@ public class PersonalCabinetPage {
         birthDataFieldPersonalCabinet().sendKeys(birth);
         heightFieldPersonalCabinet().sendKeys(height);
         genderType(gender);
-        typeOfActivity(lvlOfActivity)
+        typeOfActivity(lvlOfActivity);
         changePasswordPersonalCabinet().click();
         newPasswordFieldPersonalCabinet().sendKeys(newAndConfPassword);
         confirmPasswordFieldPersonalCabinet().sendKeys(newAndConfPassword);
         saveChangesButtonPersonalCabinet().click();
+        return new PersonalCabinetPage();
+    }
+
+    public PersonalCabinetPage createAndFullFillDataAboutNewUser(){
         return new PersonalCabinetPage();
     }
 }

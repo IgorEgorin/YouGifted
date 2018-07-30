@@ -28,8 +28,8 @@ public class EditProfileTest extends Precondition {
         logInPage.enterDataOnLogInPageAndPressSubmit(variableMailForLogInIntoPersonalCabinet
                 ,variablePasswordForLogInIntoPersonalCabinet);
 
-        personalCabinet.editProfileButtonInPersonalCabinetClick()
-                .setNewDataOnEditTabOnPersonalCabinetPage(name,);
+//        personalCabinet.editProfileButtonInPersonalCabinetClick()
+//                .setNewDataOnEditTabOnPersonalCabinetPage(name,);
 
 
 
