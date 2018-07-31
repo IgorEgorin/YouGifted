@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Selenide.$;
 public class CheckOutPage {
 
     public String pricePerMonthOnCheckOutPage() {
-        return $(By.xpath("//div[@class=\"pagespackage-subscribe-bottom\"]//span")).getText()
+        return $(By.xpath("//div[@class=\"checkout-subscribe-total\"]/span")).getText()
                 .replaceAll("р.","");
     }
 
@@ -37,7 +37,7 @@ public class CheckOutPage {
     }
 
     private SelenideElement checkBoxIacceptUserAgreementOnCheckOutPage() {
-        return $("[class=\"pagespackage-form-rules-field\"]");
+        return $("[class=\"checkout-form-rules-field\"]");
     }
 
     private SelenideElement captchaIsValidImg() {
@@ -59,6 +59,11 @@ public class CheckOutPage {
     public CheckOutPage chooseAnotherPaymentTypeAndSubmit() {
         checkBoxAnotherPaymentTypeOnCheckOutPage().click();
         checkBoxcaptchaOnCheckOutPage().click();
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         checkBoxIacceptUserAgreementOnCheckOutPage().click();
         submitButtonOnCheckOutPage().click();
         return new CheckOutPage();

@@ -1,18 +1,15 @@
 package ru.yougifted.pagespackage;
 
+import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
+import org.openqa.selenium.By;
+
+import java.io.File;
+import java.io.FileNotFoundException;
 
 import static com.codeborne.selenide.Selenide.$;
 
 public class PersonalCabinetPage {
-
-//    private SelenideElement manGenderFieldPersonalCabinet;
-//    private SelenideElement womenGenderFieldPersonalCabinet;
-//
-//    public PersonalCabinetPage() {
-//        this.manGenderFieldPersonalCabinet = manGenderFieldPersonalCabinet;
-//        this.womenGenderFieldPersonalCabinet = womenGenderFieldPersonalCabinet;
-//    }
 
     private SelenideElement editProfileButton() {
         return $("[href=\"/account/edit\"]");
@@ -33,40 +30,103 @@ public class PersonalCabinetPage {
     }
 
 
-    private SelenideElement nameFieldPersonalCabinet() {
+    public SelenideElement nameFieldPersonalCabinet() {
         return $("#accountform_name");
     }
 
-    private SelenideElement surnameFieldPersonalCabinet() {
+    public String getAttributeNameFieldPersonalCabinet() {
+        return nameFieldPersonalCabinet().attr("value");
+    }
+
+    public String getAttributeSurnameFieldPersonalCabinet() {
+        return surnameFieldPersonalCabinet().attr("value");
+    }
+
+    public String getAttributeMailFieldPersonalCabinet() {
+        return mailFieldPersonalCabinet().attr("value");
+    }
+
+    public String getAttributePhoneFieldPersonalCabinet() {
+        return phoneFieldPersonalCabinet().attr("value");
+    }
+
+    public String getAttributeBirthFieldPersonalCabinet() {
+        return birthDataFieldPersonalCabinet().attr("value");
+    }
+
+    public String getAttributeHeightFieldPersonalCabinet() {
+        return heightFieldPersonalCabinet().attr("value");
+    }
+
+    public SelenideElement surnameFieldPersonalCabinet() {
         return $("#accountform_surname");
     }
 
-    private SelenideElement mailFieldPersonalCabinet() {
+    public SelenideElement mailFieldPersonalCabinet() {
         return $("#accountform_email");
     }
 
-    private SelenideElement phoneFieldPersonalCabinet() {
+    public SelenideElement phoneFieldPersonalCabinet() {
         return $("#accountform_iu_telephone");
     }
 
-    private SelenideElement birthDataFieldPersonalCabinet() {
+    public SelenideElement birthDataFieldPersonalCabinet() {
         return $("#accountform_dob");
     }
 
-    private SelenideElement heightFieldPersonalCabinet() {
+    public SelenideElement heightFieldPersonalCabinet() {
         return $("#accountform_height");
     }
 
+    public LogInPage setFemaleGenderPersonalCabinet() {
+        genderTablePersonalCabinet().click();
+        womenGenderPersonalCabinet().click();
+        return new LogInPage();
+    }
+
+    public LogInPage setMaleGenderPersonalCabinet() {
+        genderTablePersonalCabinet().click();
+        manGenderFieldPersonalCabinet().click();
+        return new LogInPage();
+    }
+
+    public LogInPage setNotSpecifiedGenderInPersonalCabinet() {
+        genderTablePersonalCabinet().click();
+        notSpecifiedGenderPersonalCabinet().click();
+        return new LogInPage();
+    }
+
+    public String getSavingAttributeOfGender() {
+        return  $(By.xpath("//option[@selected]")).getText();
+    }
+
     private SelenideElement genderTablePersonalCabinet() {
-        return $("#iu_gender");
+        return $(By.name("iu_gender"));
     }
 
     private SelenideElement manGenderFieldPersonalCabinet() {
         return $("[value=\"male\"]");
     }
 
-    private SelenideElement womenGenderPersonalCabinet() {
+    public SelenideElement womenGenderPersonalCabinet() {
         return $("[value=\"female\"]");
+    }
+
+    public SelenideElement notSpecifiedGenderPersonalCabinet() {
+        return $("[value=\"unknown\"]");
+    }
+
+    private SelenideElement addPhotoButtonPersonalCabinet() {
+        return $("#accountform_avatar");
+    }
+
+    public PersonalCabinetPage addPhotoInsidePersonalCabinetViaPath(String s) {
+        addPhotoButtonPersonalCabinet().sendKeys(s);
+        return new PersonalCabinetPage();
+    }
+
+    public String getPathToSRCinPersonalCabinet() {
+        return $(By.xpath("//div[@class=\"account__photo\"]/img")).attr("src");
     }
 
     private SelenideElement changePasswordPersonalCabinet() {
@@ -85,8 +145,18 @@ public class PersonalCabinetPage {
         return $("[class=\"button edit-button col-xs-6 col-sm-6 col-md-6 col-lg-6\"]");
     }
 
+    public PersonalCabinetPage saveChangesButtonPersonalCabinetClick() {
+        saveChangesButtonPersonalCabinet().click();
+        return new PersonalCabinetPage();
+    }
+
     private SelenideElement logOutButtonPersonalCabinet() {
         return $("[class=\"button sing-in button-wrapper__button\"]");
+    }
+
+    public LogInPage logOutButtonPersonalCabinetClick() {
+        logOutButtonPersonalCabinet().click();
+        return new LogInPage();
     }
 
     private PersonalCabinetPage genderType(String gender) {

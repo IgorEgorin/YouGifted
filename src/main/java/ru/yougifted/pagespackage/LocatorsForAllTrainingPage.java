@@ -1,14 +1,13 @@
 package ru.yougifted.pagespackage;
 
 import com.codeborne.selenide.SelenideElement;
-import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Selenide.$;
 
 public class LocatorsForAllTrainingPage {
 
-    private SelenideElement choiceTwelveMonthSubscriptionOnTrainingPage() {
-        return $(By.xpath("//div[@class='price-subscribe-duration' and contains (text(), \"12\")]"));
+    public SelenideElement priceTwelveMonthSubscriptionOnTrainingPage() {
+        return $("[class=\"price-subscribe-value\"]",2);
     }
 
     private SelenideElement buttonBuyASubscriptionOnTrainingPage() {
@@ -17,7 +16,7 @@ public class LocatorsForAllTrainingPage {
 
 
     public LocatorsForAllTrainingPage clickOnTwelveMonthSubscription() {
-        choiceTwelveMonthSubscriptionOnTrainingPage().click();
+        priceTwelveMonthSubscriptionOnTrainingPage().click();
         return new LocatorsForAllTrainingPage();
     }
 
