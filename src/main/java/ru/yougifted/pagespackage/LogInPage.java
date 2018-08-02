@@ -22,58 +22,66 @@ public class LogInPage {
         return $("[type=\"submit\"]");
     }
 
-    public PersonalCabinetPage enterDataOnLogInPageAndPressSubmit(String mail, String password) {
+    public TabEditProfile enterDataOnLogInPageAndPressSubmit(String mail, String password) {
         new MainPage().clickLogInButtonHeaderMainPage();
         enterMailOnLogInPage().sendKeys(mail);
         enterPasswordOnLogInPage().sendKeys(password);
         submitButtonOnLogInPage().click();
-        return new PersonalCabinetPage();
+        return new TabEditProfile();
     }
 
-    public PersonalCabinetPage logInLikeTestUser() {
+    public TabEditProfile logInLikeTestUser() {
         new MainPage().clickLogInButtonHeaderMainPage();
         enterMailOnLogInPage().sendKeys(defaultUserMail);
         enterPasswordOnLogInPage().sendKeys(defaultUserPassword);
         submitButtonOnLogInPage().click();
-        return new PersonalCabinetPage();
+        return new TabEditProfile();
     }
 
-    public PersonalCabinetPage logInWithNewMail(String s) {
+    public TabEditProfile logInWithNewMail(String s) {
         new MainPage().clickLogInButtonHeaderMainPage();
         enterMailOnLogInPage().sendKeys(s);
         enterPasswordOnLogInPage().sendKeys(defaultUserPassword);
         submitButtonOnLogInPage().click();
-        return new PersonalCabinetPage();
+        return new TabEditProfile();
     }
 
-    public PersonalCabinetPage setDefaultNameOnTabMyDataPersonalCabinet(String s) {
-        new PersonalCabinetPage().nameFieldPersonalCabinet().setValue(s);
-        return new PersonalCabinetPage();
+    public TabEditProfile logInWithOldMailAndNewPassword(String s) {
+        new MainPage().clickLogInButtonHeaderMainPage();
+        enterMailOnLogInPage().sendKeys(defaultUserMail);
+        enterPasswordOnLogInPage().sendKeys(s);
+        submitButtonOnLogInPage().click();
+        return new TabEditProfile();
     }
 
-    public PersonalCabinetPage setDefaultSurnameOnTabMyDataPersonalCabinet(String s) {
-        new PersonalCabinetPage().surnameFieldPersonalCabinet().setValue(s);
-        return new PersonalCabinetPage();
+    public TabEditProfile setDefaultNameOnTabMyDataPersonalCabinet(String s) {
+        new TabEditProfile().nameFieldPersonalCabinet().setValue(s);
+        return new TabEditProfile();
     }
 
-    public PersonalCabinetPage setDefaultMailOnTabMyDataPersonalCabinet(String s) {
-        new PersonalCabinetPage().mailFieldPersonalCabinet().setValue(s);
-        return new PersonalCabinetPage();
+    public TabEditProfile setDefaultSurnameOnTabMyDataPersonalCabinet(String s) {
+        new TabEditProfile().surnameFieldPersonalCabinet().setValue(s);
+        return new TabEditProfile();
     }
 
-    public PersonalCabinetPage setDefaultPhoneOnTabMyDataPersonalCabinet(String s) {
-        new PersonalCabinetPage().phoneFieldPersonalCabinet().setValue(s);
-        return new PersonalCabinetPage();
+    public TabEditProfile setDefaultMailOnTabMyDataPersonalCabinet(String s) {
+        new TabEditProfile().mailFieldPersonalCabinet().setValue(s);
+        return new TabEditProfile();
     }
 
-    public PersonalCabinetPage setDefaultBirthOnTabMyDataPersonalCabinet(String s) {
-        new PersonalCabinetPage().birthDataFieldPersonalCabinet().setValue(s);
-        return new PersonalCabinetPage();
+    public TabEditProfile setDefaultPhoneOnTabMyDataPersonalCabinet(String s) {
+        new TabEditProfile().phoneFieldPersonalCabinet().setValue(s);
+        return new TabEditProfile();
     }
 
-    public PersonalCabinetPage setDefaultHeightOnTabMyDataPersonalCabinet(String s) {
-        new PersonalCabinetPage().heightFieldPersonalCabinet().setValue(s);
-        return new PersonalCabinetPage();
+    public TabEditProfile setBirthOnTabMyDataPersonalCabinet(String s) {
+        new TabEditProfile().birthDataFieldPersonalCabinet().setValue(s);
+        return new TabEditProfile();
+    }
+
+    public TabEditProfile setDefaultHeightOnTabMyDataPersonalCabinet(String s) {
+        new TabEditProfile().heightFieldPersonalCabinet().setValue(s);
+        return new TabEditProfile();
     }
 
 }

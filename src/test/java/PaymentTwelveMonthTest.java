@@ -43,12 +43,12 @@ public class PaymentTwelveMonthTest extends Precondition {
         maxKassa.makeSuccessPayAndGoToSite();
         paymentSuccessPage.linkgoToPersonalCabinetOnPaymentSuccessPageClick();
 
-        Assert.assertTrue(variablePricePerMonthOnTrainingPage.equals(personalCabinet
+        Assert.assertTrue(variablePricePerMonthOnTrainingPage.equals(tabEditProfile
                 .threeColumnTotalPriceOnHistoryPageTableInTabMyOrdersInPersonalCabinet())
                 , "Price per month on Training page is:" + " "
                 + variablePricePerMonthOnTrainingPage
                 +"\nPrice in tab My orders inside Personal cabinet is:" + " "
-                + personalCabinet.threeColumnTotalPriceOnHistoryPageTableInTabMyOrdersInPersonalCabinet());
+                + tabEditProfile.threeColumnTotalPriceOnHistoryPageTableInTabMyOrdersInPersonalCabinet());
 
     }
 }

@@ -9,7 +9,9 @@ public class InstanceForAllPages {
     protected CheckOutPage checkOutPage = new CheckOutPage();
     protected MaxKassaPage maxKassa = new MaxKassaPage();
     protected PaymentSuccessPage paymentSuccessPage = new PaymentSuccessPage();
-    protected PersonalCabinetPage personalCabinet = new PersonalCabinetPage();
-//    protected RegistrationPage registrationPage = new RegistrationPage();
+    protected TabEditProfile tabEditProfile = new TabEditProfile();
     protected LogInPage logInPage = new LogInPage();
+    protected TabMyTestTasks tabMyTestTasks = new TabMyTestTasks();
+    protected TabMyDimensions tabMyDimensions = new TabMyDimensions();
+    protected LocatorsForAllTabsInProfilePage locatorsForAllTabsInProfilePage = new LocatorsForAllTabsInProfilePage();
 }

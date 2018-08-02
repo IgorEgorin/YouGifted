@@ -1,37 +1,11 @@
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import ru.yougifted.helperpackage.CsvDataProvider;
 import ru.yougifted.helperpackage.Precondition;
 
-import static com.codeborne.selenide.Selenide.$;
+import java.util.Map;
 
 public class EditProfileTest extends Precondition {
-
-
-//    @Test(dataProvider = "CsvDataProvider", dataProviderClass = CsvDataProvider.class)
-//    public void editingAllFieldsOnTabMyDataInPersonalCabinet(Map<String, String> testData) throws Exception {
-//
-//        String variableMailForLogInIntoPersonalCabinet = "Egorov@ccc.ccc";
-//        String variablePasswordForLogInIntoPersonalCabinet = "0000";
-//
-//        String varName = testData.get("namePerCab");
-//        String varSurname = testData.get("surnamePerCab");
-//        String varMail = testData.get("mailPerCab");
-//        String varPhone = testData.get("phonePerCab");
-//        String varBirth = testData.get("birthPerCab");
-//        String varHeight = testData.get("heightPerCab");
-//        String varMaleOrFemale = testData.get("genderPerCab");
-//        String varActivity = testData.get("activityPerCab");
-//        String varNewAndConfPassword = testData.get("newAndConfPassPerCab");
-//
-//        String amountOfRIGHTarrowClickInsideReturnCalendar = testData.get("AmountOfClickOnRightArrow");
-//
-//        logInPage.enterDataOnLogInPageAndPressSubmit(variableMailForLogInIntoPersonalCabinet
-//                ,variablePasswordForLogInIntoPersonalCabinet);
-//
-//        personalCabinet.editProfileButtonInPersonalCabinetClick()
-//                .setNewDataOnEditTabOnPersonalCabinetPage(name,);
-
-//        Thread.sleep(10000);
 
     @Test
     public void editNameTest() {
@@ -42,23 +16,23 @@ public class EditProfileTest extends Precondition {
         logInPage.logInLikeTestUser().editProfileButtonInPersonalCabinetClick()
                 .nameFieldPersonalCabinet().setValue(variableName);
 
-        personalCabinet.saveChangesButtonPersonalCabinetClick();
+        tabEditProfile.saveChangesButtonPersonalCabinetClick();
 
         System.out.println("Assert that new name exist in field after saving\n");
 
-        Assert.assertTrue(variableName.equals(personalCabinet.getAttributeNameFieldPersonalCabinet())
+        Assert.assertTrue(variableName.equals(tabEditProfile.getAttributeNameFieldPersonalCabinet())
                 , "\nNew name is:" + " " + variableName + "\nName inside field is:"
-                        + " " + personalCabinet.getAttributeNameFieldPersonalCabinet());
+                        + " " + tabEditProfile.getAttributeNameFieldPersonalCabinet());
 
 
-        personalCabinet.logOutButtonPersonalCabinetClick().logInLikeTestUser()
+        tabEditProfile.logOutButtonPersonalCabinetClick().logInLikeTestUser()
                 .editProfileButtonInPersonalCabinetClick();
 
         System.out.println("Assert that new name exist in field after logout\n");
 
-        Assert.assertTrue(variableName.equals(personalCabinet.getAttributeNameFieldPersonalCabinet())
+        Assert.assertTrue(variableName.equals(tabEditProfile.getAttributeNameFieldPersonalCabinet())
                 , "\nNew name is:" + " " + variableName + "\nName inside field is:"
-                        + " " + personalCabinet.getAttributeNameFieldPersonalCabinet());
+                        + " " + tabEditProfile.getAttributeNameFieldPersonalCabinet());
 
         System.out.println("Set default name in name field\n");
 
@@ -76,23 +50,23 @@ public class EditProfileTest extends Precondition {
         logInPage.logInLikeTestUser().editProfileButtonInPersonalCabinetClick()
                 .surnameFieldPersonalCabinet().setValue(variableSurname);
 
-        personalCabinet.saveChangesButtonPersonalCabinetClick();
+        tabEditProfile.saveChangesButtonPersonalCabinetClick();
 
         System.out.println("Assert that new surname exist in field after saving\n");
 
-        Assert.assertTrue(variableSurname.equals(personalCabinet.getAttributeSurnameFieldPersonalCabinet())
+        Assert.assertTrue(variableSurname.equals(tabEditProfile.getAttributeSurnameFieldPersonalCabinet())
                 , "\nNew surname is:" + " " + variableSurname + "\nSurname inside field is:"
-                        + " " + personalCabinet.getAttributeSurnameFieldPersonalCabinet());
+                        + " " + tabEditProfile.getAttributeSurnameFieldPersonalCabinet());
 
 
-        personalCabinet.logOutButtonPersonalCabinetClick().logInLikeTestUser()
+        tabEditProfile.logOutButtonPersonalCabinetClick().logInLikeTestUser()
                 .editProfileButtonInPersonalCabinetClick();
 
         System.out.println("Assert that new surname exist in field after logout\n");
 
-        Assert.assertTrue(variableSurname.equals(personalCabinet.getAttributeSurnameFieldPersonalCabinet())
+        Assert.assertTrue(variableSurname.equals(tabEditProfile.getAttributeSurnameFieldPersonalCabinet())
                 , "\nNew surname is:" + " " + variableSurname + "\nSurname inside field is:"
-                        + " " + personalCabinet.getAttributeSurnameFieldPersonalCabinet());
+                        + " " + tabEditProfile.getAttributeSurnameFieldPersonalCabinet());
 
         System.out.println("Set default surname in surname field\n");
 
@@ -110,22 +84,22 @@ public class EditProfileTest extends Precondition {
         logInPage.logInLikeTestUser().editProfileButtonInPersonalCabinetClick()
                 .mailFieldPersonalCabinet().setValue(variableMail);
 
-        personalCabinet.saveChangesButtonPersonalCabinetClick();
+        tabEditProfile.saveChangesButtonPersonalCabinetClick();
 
         System.out.println("Assert that new mail exist in field after saving\n");
 
-        Assert.assertTrue(variableMail.equals(personalCabinet.getAttributeMailFieldPersonalCabinet())
+        Assert.assertTrue(variableMail.equals(tabEditProfile.getAttributeMailFieldPersonalCabinet())
                 , "\nNew mail is:" + " " + variableMail + "\nMail inside field is:"
-                        + " " + personalCabinet.getAttributeMailFieldPersonalCabinet());
+                        + " " + tabEditProfile.getAttributeMailFieldPersonalCabinet());
 
-        personalCabinet.logOutButtonPersonalCabinetClick().logInWithNewMail(variableMail)
+        tabEditProfile.logOutButtonPersonalCabinetClick().logInWithNewMail(variableMail)
                 .editProfileButtonInPersonalCabinetClick();
 
         System.out.println("Assert that new mail exist in field after logout\n");
 
-        Assert.assertTrue(variableMail.equals(personalCabinet.getAttributeMailFieldPersonalCabinet())
+        Assert.assertTrue(variableMail.equals(tabEditProfile.getAttributeMailFieldPersonalCabinet())
                 , "\nNew mail is:" + " " + variableMail + "\nMail inside field is:"
-                        + " " + personalCabinet.getAttributeMailFieldPersonalCabinet());
+                        + " " + tabEditProfile.getAttributeMailFieldPersonalCabinet());
 
         System.out.println("Set default mail in field\n");
 
@@ -142,22 +116,22 @@ public class EditProfileTest extends Precondition {
         logInPage.logInLikeTestUser().editProfileButtonInPersonalCabinetClick()
                 .phoneFieldPersonalCabinet().setValue(variablePhone);
 
-        personalCabinet.saveChangesButtonPersonalCabinetClick();
+        tabEditProfile.saveChangesButtonPersonalCabinetClick();
 
         System.out.println("AssertTrueEquals that new phone exist in field after saving\n");
 
-        Assert.assertTrue(variablePhone.equals(personalCabinet.getAttributePhoneFieldPersonalCabinet())
+        Assert.assertTrue(variablePhone.equals(tabEditProfile.getAttributePhoneFieldPersonalCabinet())
                 , "\nNew phone is:" + " " + variablePhone + "\nPhone inside field is:"
-                        + " " + personalCabinet.getAttributePhoneFieldPersonalCabinet());
+                        + " " + tabEditProfile.getAttributePhoneFieldPersonalCabinet());
 
-        personalCabinet.logOutButtonPersonalCabinetClick().logInLikeTestUser()
+        tabEditProfile.logOutButtonPersonalCabinetClick().logInLikeTestUser()
                 .editProfileButtonInPersonalCabinetClick();
 
         System.out.println("Assert that new phone exist in field after logout\n");
 
-        Assert.assertTrue(variablePhone.equals(personalCabinet.getAttributePhoneFieldPersonalCabinet())
+        Assert.assertTrue(variablePhone.equals(tabEditProfile.getAttributePhoneFieldPersonalCabinet())
                 , "\nNew phone is:" + " " + variablePhone + "\nPhone inside field is:"
-                        + " " + personalCabinet.getAttributePhoneFieldPersonalCabinet());
+                        + " " + tabEditProfile.getAttributePhoneFieldPersonalCabinet());
 
         System.out.println("Set default phone in field\n");
 
@@ -167,34 +141,38 @@ public class EditProfileTest extends Precondition {
     }
 
     @Test
-    public void editBirthTest() {
+    public void editBirthTest() throws Exception{
 
-        String variableBirth = "12.03.1972";
-        String variableDefaultBirth = "20.05.1980";
+        String variableBirth = "11.11.1111";
+        String variableDefaultBirth = "22.22.2222";
 
         logInPage.logInLikeTestUser().editProfileButtonInPersonalCabinetClick()
-                .birthDataFieldPersonalCabinet().setValue(variableBirth);
+                .birthDataFieldPersonalCabinet().clear();
 
-        personalCabinet.saveChangesButtonPersonalCabinetClick();
+        logInPage.setBirthOnTabMyDataPersonalCabinet(variableBirth);
+
+        Thread.sleep(5000);
+
+        tabEditProfile.saveChangesButtonPersonalCabinetClick();
 
         System.out.println("AssertTrueEquals that new data of birth exist in field after saving\n");
 
-        Assert.assertTrue(variableBirth.equals(personalCabinet.getAttributeBirthFieldPersonalCabinet())
+        Assert.assertTrue(variableBirth.equals(tabEditProfile.getAttributeBirthFieldPersonalCabinet())
                 , "\nNew data of birth is:" + " " + variableBirth + "\nData of birth inside field is:"
-                        + " " + personalCabinet.getAttributeBirthFieldPersonalCabinet());
+                        + " " + tabEditProfile.getAttributeBirthFieldPersonalCabinet());
 
-        personalCabinet.logOutButtonPersonalCabinetClick().logInLikeTestUser()
+        tabEditProfile.logOutButtonPersonalCabinetClick().logInLikeTestUser()
                 .editProfileButtonInPersonalCabinetClick();
 
         System.out.println("Assert that new data of birth exist in field after logout\n");
 
-        Assert.assertTrue(variableBirth.equals(personalCabinet.getAttributeBirthFieldPersonalCabinet())
+        Assert.assertTrue(variableBirth.equals(tabEditProfile.getAttributeBirthFieldPersonalCabinet())
                 , "\nNew data of birth is:" + " " + variableBirth + "\nData of birth inside field is:"
-                        + " " + personalCabinet.getAttributeBirthFieldPersonalCabinet());
+                        + " " + tabEditProfile.getAttributeBirthFieldPersonalCabinet());
 
         System.out.println("Set default data of birth in field\n");
 
-        logInPage.setDefaultBirthOnTabMyDataPersonalCabinet(variableDefaultBirth)
+        logInPage.setBirthOnTabMyDataPersonalCabinet(variableDefaultBirth)
                 .saveChangesButtonPersonalCabinetClick().logOutButtonPersonalCabinetClick();
 
     }
@@ -209,22 +187,22 @@ public class EditProfileTest extends Precondition {
         logInPage.logInLikeTestUser().editProfileButtonInPersonalCabinetClick()
                 .heightFieldPersonalCabinet().setValue(variableHeight);
 
-        personalCabinet.saveChangesButtonPersonalCabinetClick();
+        tabEditProfile.saveChangesButtonPersonalCabinetClick();
 
         System.out.println("AssertTrueEquals that new height exist in field after saving\n");
 
-        Assert.assertTrue(variableHeight.equals(personalCabinet.getAttributeHeightFieldPersonalCabinet())
+        Assert.assertTrue(variableHeight.equals(tabEditProfile.getAttributeHeightFieldPersonalCabinet())
                 , "\nNew height is:" + " " + variableHeight + "\nHeight inside field is:"
-                        + " " + personalCabinet.getAttributeHeightFieldPersonalCabinet());
+                        + " " + tabEditProfile.getAttributeHeightFieldPersonalCabinet());
 
-        personalCabinet.logOutButtonPersonalCabinetClick().logInLikeTestUser()
+        tabEditProfile.logOutButtonPersonalCabinetClick().logInLikeTestUser()
                 .editProfileButtonInPersonalCabinetClick();
 
         System.out.println("Assert that new height exist in field after logout\n");
 
-        Assert.assertTrue(variableHeight.equals(personalCabinet.getAttributeHeightFieldPersonalCabinet())
+        Assert.assertTrue(variableHeight.equals(tabEditProfile.getAttributeHeightFieldPersonalCabinet())
                 , "\nNew height is:" + " " + variableHeight + "\nHeight inside field is:"
-                        + " " + personalCabinet.getAttributeHeightFieldPersonalCabinet());
+                        + " " + tabEditProfile.getAttributeHeightFieldPersonalCabinet());
 
         System.out.println("Set default height in field\n");
 
@@ -240,27 +218,27 @@ public class EditProfileTest extends Precondition {
         logInPage.logInLikeTestUser().editProfileButtonInPersonalCabinetClick()
                 .setFemaleGenderPersonalCabinet();
 
-        personalCabinet.saveChangesButtonPersonalCabinetClick();
+        tabEditProfile.saveChangesButtonPersonalCabinetClick();
 
         System.out.println("AssertTrueEquals that female gender exist in list after saving\n");
 
-        Assert.assertTrue(personalCabinet.getSavingAttributeOfGender().equals(varAttributeInsideSavingForm),
-                "\nSaving gender word in list is:" + " " + personalCabinet.getSavingAttributeOfGender() +
+        Assert.assertTrue(tabEditProfile.getSavingAttributeOfGender().equals(varAttributeInsideSavingForm),
+                "\nSaving gender word in list is:" + " " + tabEditProfile.getSavingAttributeOfGender() +
                         "\nExpected variable is:" + " " + varAttributeInsideSavingForm);
 
-        personalCabinet.logOutButtonPersonalCabinetClick().logInLikeTestUser()
+        tabEditProfile.logOutButtonPersonalCabinetClick().logInLikeTestUser()
                 .editProfileButtonInPersonalCabinetClick();
 
         System.out.println("AssertTrueEquals that female gender exist in list after logout\n");
 
-        Assert.assertTrue(personalCabinet.getSavingAttributeOfGender().equals(varAttributeInsideSavingForm),
-                "\nSaving gender word in list is:" + " " + personalCabinet.getSavingAttributeOfGender() +
+        Assert.assertTrue(tabEditProfile.getSavingAttributeOfGender().equals(varAttributeInsideSavingForm),
+                "\nSaving gender word in list is:" + " " + tabEditProfile.getSavingAttributeOfGender() +
                         "\nExpected variable is:" + " " + varAttributeInsideSavingForm);
 
         System.out.println("Set default male gender in field\n");
 
-        personalCabinet.setMaleGenderPersonalCabinet();
-        personalCabinet.saveChangesButtonPersonalCabinetClick().logOutButtonPersonalCabinetClick();
+        tabEditProfile.setMaleGenderPersonalCabinet();
+        tabEditProfile.saveChangesButtonPersonalCabinetClick().logOutButtonPersonalCabinetClick();
 
     }
 
@@ -272,27 +250,27 @@ public class EditProfileTest extends Precondition {
         logInPage.logInLikeTestUser().editProfileButtonInPersonalCabinetClick()
                 .setNotSpecifiedGenderInPersonalCabinet();
 
-        personalCabinet.saveChangesButtonPersonalCabinetClick();
+        tabEditProfile.saveChangesButtonPersonalCabinetClick();
 
         System.out.println("AssertTrueEquals that not specified gender exist in list after saving\n");
 
-        Assert.assertTrue(personalCabinet.getSavingAttributeOfGender().equals(varAttributeInsideSavingForm),
-                "\nSaving gender word in list is:" + " " + personalCabinet.getSavingAttributeOfGender() +
+        Assert.assertTrue(tabEditProfile.getSavingAttributeOfGender().equals(varAttributeInsideSavingForm),
+                "\nSaving gender word in list is:" + " " + tabEditProfile.getSavingAttributeOfGender() +
                         "\nExpected variable is:" + " " + varAttributeInsideSavingForm);
 
-        personalCabinet.logOutButtonPersonalCabinetClick().logInLikeTestUser()
+        tabEditProfile.logOutButtonPersonalCabinetClick().logInLikeTestUser()
                 .editProfileButtonInPersonalCabinetClick();
 
         System.out.println("AssertTrueEquals that not specified gender exist in list after logout\n");
 
-        Assert.assertTrue(personalCabinet.getSavingAttributeOfGender().equals(varAttributeInsideSavingForm),
-                "\nSaving gender word in list is:" + " " + personalCabinet.getSavingAttributeOfGender() +
+        Assert.assertTrue(tabEditProfile.getSavingAttributeOfGender().equals(varAttributeInsideSavingForm),
+                "\nSaving gender word in list is:" + " " + tabEditProfile.getSavingAttributeOfGender() +
                         "\nExpected variable is:" + " " + varAttributeInsideSavingForm);
 
         System.out.println("Set default male gender in field\n");
 
-        personalCabinet.setMaleGenderPersonalCabinet();
-        personalCabinet.saveChangesButtonPersonalCabinetClick().logOutButtonPersonalCabinetClick();
+        tabEditProfile.setMaleGenderPersonalCabinet();
+        tabEditProfile.saveChangesButtonPersonalCabinetClick().logOutButtonPersonalCabinetClick();
     }
 
     @Test
@@ -304,40 +282,106 @@ public class EditProfileTest extends Precondition {
         logInPage.logInLikeTestUser()
                 .editProfileButtonInPersonalCabinetClick();
 
-        String varSRCofPhotoBeforeLoad = personalCabinet.getPathToSRCinPersonalCabinet();
+        String varSRCofPhotoBeforeLoad = tabEditProfile.getPathToSRCinPersonalCabinet();
 
-        personalCabinet
+        tabEditProfile
                 .addPhotoInsidePersonalCabinetViaPath(varPathToNewPhoto)
                 .saveChangesButtonPersonalCabinetClick();
 
         System.out.println("AssertFalseEquals that src path has difference before " +
                 "and after upload photo when saving button has already pushed\n");
 
-        Assert.assertFalse(varSRCofPhotoBeforeLoad.equals(personalCabinet.getPathToSRCinPersonalCabinet()),
+        Assert.assertFalse(varSRCofPhotoBeforeLoad.equals(tabEditProfile.getPathToSRCinPersonalCabinet()),
                 "\nSrc before load is:" + " " + varSRCofPhotoBeforeLoad +
-                        "\nSrc after load is:" + " " + personalCabinet.getPathToSRCinPersonalCabinet());
+                        "\nSrc after load is:" + " " + tabEditProfile.getPathToSRCinPersonalCabinet());
 
         System.out.println("Before load:\n" + varSRCofPhotoBeforeLoad);
 
-        System.out.println("After load:\n" + personalCabinet.getPathToSRCinPersonalCabinet());
+        System.out.println("After load:\n" + tabEditProfile.getPathToSRCinPersonalCabinet());
 
-        personalCabinet.logOutButtonPersonalCabinetClick().logInLikeTestUser()
+        tabEditProfile.logOutButtonPersonalCabinetClick().logInLikeTestUser()
                 .editProfileButtonInPersonalCabinetClick();
 
         System.out.println("AssertFalseEquals that new photo exist in profile after logout\n");
 
-        Assert.assertFalse(varSRCofPhotoBeforeLoad.equals(personalCabinet.getPathToSRCinPersonalCabinet()),
+        Assert.assertFalse(varSRCofPhotoBeforeLoad.equals(tabEditProfile.getPathToSRCinPersonalCabinet()),
                 "\nSrc before load is:" + " " + varSRCofPhotoBeforeLoad +
-                        "\nSrc after load is:" + " " + personalCabinet.getPathToSRCinPersonalCabinet());
+                        "\nSrc after load is:" + " " + tabEditProfile.getPathToSRCinPersonalCabinet());
 
         System.out.println("Set default photo\n");
 
-        personalCabinet
+        tabEditProfile
                 .addPhotoInsidePersonalCabinetViaPath(varPathToDefaultPhoto)
                 .saveChangesButtonPersonalCabinetClick();
 
     }
 
+    @Test(dataProvider = "CsvDataProvider", dataProviderClass = CsvDataProvider.class)
+    public void editLevelOfActivity(Map<String, String> testData) throws Exception {
+
+        String varTypeOfActivity = testData.get("numberOfActivityLevel");
+
+        logInPage.logInLikeTestUser().editProfileButtonInPersonalCabinetClick()
+                .typeOfActivity(varTypeOfActivity);
+
+        System.out.println("Choose type of activity in personal cabinet on tab my data");
+
+
+        tabEditProfile.saveChangesButtonPersonalCabinetClick();
+
+        System.out.println("AssertTrueEquals that activity level is correct after saving\n");
+
+
+        Assert.assertTrue(varTypeOfActivity.equals(tabEditProfile
+                        .getAttributeLevelOfActivityPersonalCabinet()),
+                "\nLevel activity before saving is:" + " " + varTypeOfActivity +
+                        "\nLevel activity after saving is:" + " " + tabEditProfile
+                        .getAttributeLevelOfActivityPersonalCabinet());
+
+        tabEditProfile.logOutButtonPersonalCabinetClick().logInLikeTestUser()
+                .editProfileButtonInPersonalCabinetClick();
+
+
+        System.out.println("AssertFalseEquals that new photo exist in profile after logout\n");
+
+
+        Assert.assertTrue(varTypeOfActivity.equals(tabEditProfile
+                        .getAttributeLevelOfActivityPersonalCabinet()),
+                "\nLevel activity before saving is:" + " " + varTypeOfActivity +
+                        "\nLevel activity after logout is:" + " " + tabEditProfile
+                        .getAttributeLevelOfActivityPersonalCabinet());
+
+        tabEditProfile.logOutButtonPersonalCabinetClick();
+    }
+
+
+    @Test
+    public void editPassword() {
+
+        String varNewPassword = "123ABab";
+        String setDefaultPassword = "0000a";
+
+        logInPage.logInLikeTestUser().editProfileButtonInPersonalCabinetClick();
+
+        System.out.println("Enter and save new password");
+
+        tabEditProfile.enterAndConfirmNewPassword(varNewPassword)
+                .saveChangesButtonPersonalCabinetClick().logOutButtonPersonalCabinetClick()
+                .logInWithOldMailAndNewPassword(varNewPassword);
+
+        System.out.println("Assert that login with new password is success. Log out button is displayed in" + " " +
+                "personal cabinet");
+
+        tabEditProfile.editProfileButtonInPersonalCabinetClick();
+
+        Assert.assertTrue(tabEditProfile.logOutButtonPersonalCabinet().isDisplayed());
+
+        System.out.println("Set default password");
+
+        tabEditProfile.editProfileButtonInPersonalCabinetClick().enterAndConfirmNewPassword(setDefaultPassword).saveChangesButtonPersonalCabinetClick()
+                .logOutButtonPersonalCabinetClick();
+
+    }
 }
 
 
