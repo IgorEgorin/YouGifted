@@ -139,8 +139,8 @@ public class EditProfileTest extends Precondition {
     @Test
     public void editPhoneTest() {
 
-        String variablePhone = "7(999)000-00-00";
-        String variableDefaultPhone = "7(999)000-11-11";
+        String variablePhone = "7(777)777-77-77";
+        String variableDefaultPhone = "9(999)999-99-99";
 
         logInPage.logInLikeTestUser().editProfileButtonInPersonalCabinetClick()
                 .phoneFieldPersonalCabinet().setValue(variablePhone);
@@ -223,8 +223,8 @@ public class EditProfileTest extends Precondition {
     @Test
     public void editHeightTest() {
 
-        String variableHeight = "173";
-        String variableDefaultHeight = "187";
+        String variableHeight = "222";
+        String variableDefaultHeight = "111";
 
         logInPage.logInLikeTestUser().editProfileButtonInPersonalCabinetClick()
                 .heightFieldPersonalCabinet().setValue(variableHeight);

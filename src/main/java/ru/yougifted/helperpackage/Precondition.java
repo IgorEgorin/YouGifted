@@ -21,7 +21,7 @@ public class Precondition extends InstanceForAllPages {
 
     }
 
-    @AfterClass
+    @AfterMethod
     public void quit() {
         Selenide.close();
     }
