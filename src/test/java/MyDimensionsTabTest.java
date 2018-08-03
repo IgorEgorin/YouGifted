@@ -10,7 +10,7 @@ public class MyDimensionsTabTest extends Precondition {
 
     @Test(dataProvider = "CsvDataProvider", dataProviderClass = CsvDataProvider.class)
     public void editClientDimensions(Map<String, String> testData) throws Exception {
-
+//0408
         String varWeight = testData.get("weight");
         String varWaist = testData.get("waist");
         String varHipcircumference = testData.get("hipcircumference");
