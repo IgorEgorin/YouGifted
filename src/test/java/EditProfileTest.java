@@ -127,7 +127,7 @@ public class EditProfileTest extends Precondition {
 //        Assert.assertTrue(variableMail.equals(tabEditProfile.getAttributeMailFieldPersonalCabinet())
 //                , "\nNew mail is:" + " " + variableMail + "\nMail inside field is:"
 //                        + " " + tabEditProfile.getAttributeMailFieldPersonalCabinet());
-
+//
 
 
         System.out.println("Set default mail in field\n");
