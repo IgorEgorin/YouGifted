@@ -10,6 +10,11 @@ public class MainPage {
         return $("[href=\"/login\"]");
     }
 
+    public MainPage clickOnRegistrationButtonInHeaderOnMainPage() {
+        $("[href=\"/register\"]").click();
+        return new MainPage();
+    }
+
     private SelenideElement newLifeFirstStageImgOnMainPage() {
         return $("[class=\"packages-item-button\"] [href=\"/packages/newlife\"]",1);
     }

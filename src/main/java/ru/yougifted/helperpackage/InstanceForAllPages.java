@@ -14,4 +14,6 @@ public class InstanceForAllPages {
     protected TabMyTestTasks tabMyTestTasks = new TabMyTestTasks();
     protected TabMyDimensions tabMyDimensions = new TabMyDimensions();
     protected LocatorsForAllTabsInProfilePage locatorsForAllTabsInProfilePage = new LocatorsForAllTabsInProfilePage();
+    protected RegistrationPage registrationPage = new RegistrationPage();
+    protected TabTraining tabTraining = new TabTraining();
 }
