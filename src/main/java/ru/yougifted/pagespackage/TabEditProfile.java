@@ -25,7 +25,7 @@ public class TabEditProfile {
         return new TabEditProfile();
     }
 
-//
+
     public SelenideElement nameFieldPersonalCabinet() {
         return $("#accountform_name");
     }
