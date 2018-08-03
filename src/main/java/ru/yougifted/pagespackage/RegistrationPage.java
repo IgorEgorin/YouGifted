@@ -28,21 +28,28 @@ public class RegistrationPage {
     }
 
     private SelenideElement checkBoxIagreeRegistrationPage() {
-        return $(By.name("rules"));
+        return $("[class=\"checkout-form-rules-field\"]");
     }
 
     private SelenideElement submitButtonRegistrationPage() {
-        return $(By.name("#reg-submit"));
+        return $("#reg-submit");
     }
 
-    public void enterDataNameSurnamePhoneMailAndSubmitOnRegistrationPage (String name
+    public RegistrationPage enterDataNameSurnamePhoneMailAndSubmitOnRegistrationPage (String name
             , String surname, String mail, String phone) {
         nameFieldRegistrationPage().sendKeys(name);
-        surnameFieldRegistrationPage().sendKeys(name);
-        mailFieldRegistrationPage().sendKeys(name);
-        phoneFieldRegistrationPage().sendKeys(name);
+        surnameFieldRegistrationPage().sendKeys(surname);
+        mailFieldRegistrationPage().sendKeys(mail);
+        phoneFieldRegistrationPage().sendKeys(phone);
         captchaRegistrationPage().click();
-        checkBoxIagreeRegistrationPage().click();
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        checkBoxIagreeRegistrationPage().scrollTo().click();
         submitButtonRegistrationPage().click();
+        return new RegistrationPage();
     }
+
 }
