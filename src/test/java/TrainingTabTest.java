@@ -11,7 +11,7 @@ public class TrainingTabTest extends Precondition {
 
     @Test
     public void testName() throws Exception {
-        //03082018
+        //04082018
 
         String varName = "Александр";
         String varSurname = "Владимиров";
