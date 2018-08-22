@@ -2,16 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="813de348-1727-47e1-8ae9-498d030f4ece" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/yougifted/pagespackage/DropMailPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/yougifted/pagespackage/TempMailPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/RegistrationTest_creatingNewUserAndThenLogIn.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/PasswordRecoveryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/RegistrationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/yougifted/helperpackage/InstanceForAllPages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/yougifted/helperpackage/InstanceForAllPages.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/yougifted/helperpackage/Precondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/yougifted/helperpackage/Precondition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EditProfileTest_editLevelOfActivity.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EditProfileTest_editLevelOfActivity.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EditProfileTest_editingAllFieldsOnTabMyDataInPersonalCabinet.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/EditProfileTest_editingAllFieldsOnTabMyDataInPersonalCabinet.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MyDimensionsTabTest_editClientDimensions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MyDimensionsTabTest_editClientDimensions.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/yougifted/pagespackage/CheckOutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/yougifted/pagespackage/CheckOutPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/yougifted/pagespackage/LogInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/yougifted/pagespackage/LogInPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/yougifted/pagespackage/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/yougifted/pagespackage/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/yougifted/pagespackage/PersonalCabinetPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/yougifted/pagespackage/PersonalCabinetPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/yougifted/pagespackage/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/yougifted/pagespackage/RegistrationPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ru/yougifted/helperpackage/InstanceForAllPages.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/yougifted/helperpackage/InstanceForAllPages.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ru/yougifted/helperpackage/Precondition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/yougifted/helperpackage/Precondition.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/yougifted/pagespackage/LogInPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/yougifted/pagespackage/LogInPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ru/yougifted/pagespackage/MainPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/yougifted/pagespackage/MainPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/yougifted/pagespackage/MyTestTasks.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/yougifted/pagespackage/PersonalCabinetPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/yougifted/pagespackage/PersonalCabinetPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ru/yougifted/pagespackage/RegistrationPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/yougifted/pagespackage/RegistrationPage.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -24,16 +34,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Precondition.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/yougifted/helperpackage/Precondition.java">
+      <file leaf-file-name="PasswordRecoveryTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/PasswordRecoveryTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="26" column="2" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="2" />
+            <state relative-caret-position="1003">
+              <caret line="68" column="1" lean-forward="true" selection-start-line="68" selection-start-column="1" selection-end-line="68" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -48,6 +65,9 @@
       <find>edith</find>
       <find>mail</find>
       <find>pass</find>
+      <find>fieldEnterNewPasswordOnRecoveryPage</find>
+      <find>defa</find>
+      <find>ente</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -59,10 +79,7 @@
         <option value="$PROJECT_DIR$/src/test/java/PaymentTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/yougifted/pagespackage/LocatorsForAllTrainingPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/yougifted/pagespackage/MaxKassaPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/yougifted/pagespackage/CheckOutPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/PaymentTwelveMonthTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/yougifted/pagespackage/LogInPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/yougifted/pagespackage/PersonalCabinetPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/yougifted/pagespackage/LocatorsForAllTabsInProfilePage.java" />
         <option value="$PROJECT_DIR$/src/main/resources/MyDimensionsTabTest_editWeight.csv" />
         <option value="$PROJECT_DIR$/src/main/java/ru/yougifted/pagespackage/TabMyDimensions.java" />
@@ -71,7 +88,21 @@
         <option value="$PROJECT_DIR$/src/test/java/EditProfileTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/MyDimensionsTabTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/MyTestTaskTab.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/yougifted/pagespackage/CheckOutPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/yougifted/pagespackage/TempMail666RuPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/yougifted/pagespackage/MainPage.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/yougifted/pagespackage/RegistrationPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/yougifted/helperpackage/Precondition.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PasswordRecovery.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/yougifted/pagespackage/TempMailPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PasswordRecoveryTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/yougifted/pagespackage/DropMailPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/yougifted/pagespackage/LogInPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/yougifted/helperpackage/InstanceForAllPages.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/yougifted/pagespackage/PersonalCabinetPage.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/RegistrationTest_creatingNewUserAndThenLogIn.csv" />
+        <option value="$PROJECT_DIR$/src/test/java/RegistrationTest.java" />
       </list>
     </option>
   </component>
@@ -87,6 +118,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -173,9 +207,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -198,7 +229,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.&lt;default&gt;">
+  <component name="RunManager" selected="TestNG.RegistrationTest.creatingNewUserAndThenLogIn">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -217,85 +248,6 @@
         <value defaultName="singleModule" />
       </option>
       <patterns />
-    </configuration>
-    <configuration name="EditProfileTest.editLevelOfActivity (1)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="YouGifted" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="EditProfileTest" />
-      <option name="METHOD_NAME" value="editLevelOfActivity" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" value="1" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <properties />
-      <listeners />
-      <patterns>
-        <pattern testClass="EditProfileTest,editLevelOfActivity" />
-      </patterns>
-    </configuration>
-    <configuration name="EditProfileTest,editLevelOfActivity" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="YouGifted" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="PATTERN" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" value="1" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <properties />
-      <listeners />
-      <patterns>
-        <pattern testClass="EditProfileTest,editLevelOfActivity" />
-      </patterns>
-    </configuration>
-    <configuration name="EditProfileTest,editPhoneTest and 1 more" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="YouGifted" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="PATTERN" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" value="0" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <properties />
-      <listeners />
-      <patterns>
-        <pattern testClass="EditProfileTest,editPhoneTest" />
-        <pattern testClass="EditProfileTest,editLevelOfActivity" />
-      </patterns>
     </configuration>
     <configuration name="MyDimensionsTabTest.editClientDimensions (1)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="YouGifted" />
@@ -320,14 +272,14 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="MyDimensionsTabTest.editClientDimensions" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="PasswordRecoveryTest.passwordRecovery" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="YouGifted" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MyDimensionsTabTest" />
-      <option name="METHOD_NAME" value="editClientDimensions" />
+      <option name="MAIN_CLASS_NAME" value="PasswordRecoveryTest" />
+      <option name="METHOD_NAME" value="passwordRecovery" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -343,16 +295,85 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="&lt;default&gt;" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="RegistrationTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="YouGifted" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" />
+      <option name="MAIN_CLASS_NAME" value="RegistrationTest" />
       <option name="METHOD_NAME" />
       <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="PACKAGE" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="RegistrationTest.creatingNewUserAndThenLogIn (1)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="YouGifted" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RegistrationTest" />
+      <option name="METHOD_NAME" value="creatingNewUserAndThenLogIn" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="RegistrationTest.creatingNewUserAndThenLogIn (2)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="YouGifted" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RegistrationTest" />
+      <option name="METHOD_NAME" value="creatingNewUserAndThenLogIn" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="RegistrationTest.creatingNewUserAndThenLogIn" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="YouGifted" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RegistrationTest" />
+      <option name="METHOD_NAME" value="creatingNewUserAndThenLogIn" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -389,19 +410,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="TestNG.MyDimensionsTabTest.editClientDimensions" />
-      <item itemvalue="TestNG.&lt;default&gt;" />
-      <item itemvalue="TestNG.EditProfileTest,editPhoneTest and 1 more" />
-      <item itemvalue="TestNG.EditProfileTest,editLevelOfActivity" />
-      <item itemvalue="TestNG.EditProfileTest.editLevelOfActivity (1)" />
+      <item itemvalue="TestNG.RegistrationTest.creatingNewUserAndThenLogIn" />
+      <item itemvalue="TestNG.RegistrationTest" />
+      <item itemvalue="TestNG.RegistrationTest.creatingNewUserAndThenLogIn (1)" />
+      <item itemvalue="TestNG.PasswordRecoveryTest.passwordRecovery" />
+      <item itemvalue="TestNG.RegistrationTest.creatingNewUserAndThenLogIn (2)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.&lt;default&gt;" />
-        <item itemvalue="TestNG.EditProfileTest.editLevelOfActivity (1)" />
-        <item itemvalue="TestNG.EditProfileTest,editLevelOfActivity" />
-        <item itemvalue="TestNG.EditProfileTest,editPhoneTest and 1 more" />
-        <item itemvalue="TestNG.MyDimensionsTabTest.editClientDimensions" />
+        <item itemvalue="TestNG.RegistrationTest.creatingNewUserAndThenLogIn" />
+        <item itemvalue="TestNG.RegistrationTest.creatingNewUserAndThenLogIn (2)" />
+        <item itemvalue="TestNG.PasswordRecoveryTest.passwordRecovery" />
+        <item itemvalue="TestNG.RegistrationTest.creatingNewUserAndThenLogIn (1)" />
+        <item itemvalue="TestNG.RegistrationTest" />
       </list>
     </recent_temporary>
   </component>
@@ -465,39 +486,46 @@
       <option name="project" value="LOCAL" />
       <updated>1533327309882</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="31072018">
+      <created>1534779239891</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1534779239891</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="_default_ - 2018.08.02 at 17h 41m 45s.xml">
-      <configuration name="&lt;default&gt;" configurationId="TestNG" />
+    <history-entry file="RegistrationTest_creatingNewUserAndThenLogIn - 2018.08.22 at 15h 15m 45s.xml">
+      <configuration name="RegistrationTest.creatingNewUserAndThenLogIn" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_default_ - 2018.08.02 at 17h 56m 40s.xml">
-      <configuration name="&lt;default&gt;" configurationId="TestNG" />
+    <history-entry file="RegistrationTest_creatingNewUserAndThenLogIn - 2018.08.22 at 15h 17m 37s.xml">
+      <configuration name="RegistrationTest.creatingNewUserAndThenLogIn" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_default_ - 2018.08.02 at 18h 52m 58s.xml">
-      <configuration name="&lt;default&gt;" configurationId="TestNG" />
+    <history-entry file="RegistrationTest_creatingNewUserAndThenLogIn - 2018.08.22 at 15h 22m 20s.xml">
+      <configuration name="RegistrationTest.creatingNewUserAndThenLogIn" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_default_ - 2018.08.02 at 19h 15m 52s.xml">
-      <configuration name="&lt;default&gt;" configurationId="TestNG" />
+    <history-entry file="RegistrationTest_creatingNewUserAndThenLogIn - 2018.08.22 at 15h 30m 08s.xml">
+      <configuration name="RegistrationTest.creatingNewUserAndThenLogIn" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_default_ - 2018.08.06 at 01h 12m 24s.xml">
-      <configuration name="&lt;default&gt;" configurationId="TestNG" />
+    <history-entry file="RegistrationTest_creatingNewUserAndThenLogIn - 2018.08.22 at 15h 38m 13s.xml">
+      <configuration name="RegistrationTest.creatingNewUserAndThenLogIn" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_default_ - 2018.08.20 at 17h 51m 47s.xml">
-      <configuration name="&lt;default&gt;" configurationId="TestNG" />
+    <history-entry file="RegistrationTest_creatingNewUserAndThenLogIn - 2018.08.22 at 15h 52m 27s.xml">
+      <configuration name="RegistrationTest.creatingNewUserAndThenLogIn" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_default_ - 2018.08.20 at 18h 01m 33s.xml">
-      <configuration name="&lt;default&gt;" configurationId="TestNG" />
+    <history-entry file="RegistrationTest_creatingNewUserAndThenLogIn - 2018.08.22 at 15h 56m 46s.xml">
+      <configuration name="RegistrationTest.creatingNewUserAndThenLogIn" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="EditProfileTest,editLevelOfActivity - 2018.08.20 at 18h 03m 42s.xml">
-      <configuration name="EditProfileTest,editLevelOfActivity" configurationId="TestNG" />
+    <history-entry file="RegistrationTest_creatingNewUserAndThenLogIn - 2018.08.22 at 15h 58m 01s.xml">
+      <configuration name="RegistrationTest.creatingNewUserAndThenLogIn" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="EditProfileTest_editLevelOfActivity_(1) - 2018.08.20 at 18h 04m 34s.xml">
-      <configuration name="EditProfileTest.editLevelOfActivity (1)" configurationId="TestNG" />
+    <history-entry file="RegistrationTest_creatingNewUserAndThenLogIn - 2018.08.22 at 16h 00m 43s.xml">
+      <configuration name="RegistrationTest.creatingNewUserAndThenLogIn" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="_default_ - 2018.08.20 at 18h 16m 25s.xml">
-      <configuration name="&lt;default&gt;" configurationId="TestNG" />
+    <history-entry file="RegistrationTest_creatingNewUserAndThenLogIn - 2018.08.22 at 16h 17m 44s.xml">
+      <configuration name="RegistrationTest.creatingNewUserAndThenLogIn" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -510,14 +538,14 @@
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5014641" side_tool="true" weight="0.32857144" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50323623" side_tool="true" weight="0.32857144" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3297619" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49853587" visible="true" weight="0.32857144" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49676377" visible="true" weight="0.32857144" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30582523" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18365696" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -540,40 +568,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="31072018" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/VariablePhoto.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/DefaultPhoto.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/yougifted/pagespackage/RegistrationPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/yougifted/helperpackage/InstanceForAllPages.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/yougifted/pagespackage/MainPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/yougifted/pagespackage/LogInPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1156">
-          <caret line="77" selection-start-line="77" selection-end-line="77" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/yougifted/helperpackage/Precondition.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -707,60 +701,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/yougifted/pagespackage/PaymentSuccessPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/yougifted/pagespackage/LocatorsForAllTrainingPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/yougifted/pagespackage/CheckOutPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="65" column="9" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/yougifted/pagespackage/RegistrationPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/yougifted/pagespackage/MainPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/DefaultPhoto.jpeg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/VariablePhoto.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/yougifted/pagespackage/PersonalCabinetPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1309">
-          <caret line="122" column="67" selection-start-line="122" selection-start-column="31" selection-end-line="122" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/yougifted/pagespackage/LocatorsForAllTabsInProfilePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/yougifted/helperpackage/CsvDataProvider.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -776,86 +721,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/MyDimensionsTabTest_editClientDimensions.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/EditProfileTest_editLevelOfActivity.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-459" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/yougifted/pagespackage/TabEditProfile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/yougifted/pagespackage/MyTestTasks.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/yougifted/pagespackage/TabMyTestTasks.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1309">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/yougifted/helperpackage/InstanceForAllPages.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TrainingTabTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PaymentTwelveMonthTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="35" column="33" lean-forward="true" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/yougifted/pagespackage/MaxKassaPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-          <folding>
-            <element signature="e#342#343#0" expanded="true" />
-            <element signature="e#392#393#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/MyDimensionsTabTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="8" column="46" lean-forward="true" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/yougifted/pagespackage/LogInPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="34" column="43" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/MyTestTaskTab.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="7" column="43" lean-forward="true" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -866,10 +736,179 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/yougifted/helperpackage/Precondition.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/PaymentTwelveMonthTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/yougifted/pagespackage/CheckOutPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="50" column="24" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="66" column="10" selection-start-line="66" selection-start-column="10" selection-end-line="66" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/MyTestTaskTab.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="7" column="43" lean-forward="true" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/yougifted/pagespackage/LocatorsForAllTabsInProfilePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/yougifted/pagespackage/MaxKassaPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-52">
+          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/yougifted/pagespackage/PaymentSuccessPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/yougifted/pagespackage/TempMailPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/yougifted/pagespackage/DropMailPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/yougifted/pagespackage/RegistrationPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/yougifted/pagespackage/MainPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TrainingTabTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/yougifted/pagespackage/LogInPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="114" column="21" selection-start-line="114" selection-start-column="21" selection-end-line="114" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/yougifted/pagespackage/TabEditProfile.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
-          <caret line="26" column="2" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="2" />
+          <caret line="152" column="27" selection-start-line="152" selection-start-column="27" selection-end-line="152" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/yougifted/helperpackage/InstanceForAllPages.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/EditProfileTest_editingAllFieldsOnTabMyDataInPersonalCabinet.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/EditProfileTest_editLevelOfActivity.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/MyDimensionsTabTest_editClientDimensions.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/MyDimensionsTabTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="8" column="46" lean-forward="true" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/RegistrationTest_creatingNewUserAndThenLogIn.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/yougifted/helperpackage/Precondition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/yougifted/pagespackage/PersonalCabinetPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="60" column="37" selection-start-line="60" selection-start-column="37" selection-end-line="60" selection-end-column="37" />
+          <folding>
+            <element signature="e#1232#1233#0" expanded="true" />
+            <element signature="e#1295#1296#0" expanded="true" />
+            <element signature="e#1841#1842#0" expanded="true" />
+            <element signature="e#1887#1888#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/yougifted/pagespackage/LocatorsForAllTrainingPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RegistrationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="26" column="39" lean-forward="true" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PasswordRecoveryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="68" column="1" lean-forward="true" selection-start-line="68" selection-start-column="1" selection-end-line="68" selection-end-column="1" />
         </state>
       </provider>
     </entry>

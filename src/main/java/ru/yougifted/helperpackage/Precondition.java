@@ -14,7 +14,7 @@ public class Precondition extends InstanceForAllPages {
 
         ChromeDriverManager.getInstance().setup();
         Configuration.browser = "Chrome";
-        Configuration.timeout = 10000;
+        Configuration.timeout = 15000;
         Selenide.open("http://yg640.testing.place/");
 
 

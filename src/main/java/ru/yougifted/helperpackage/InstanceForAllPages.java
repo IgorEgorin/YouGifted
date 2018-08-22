@@ -16,4 +16,7 @@ public class InstanceForAllPages {
     protected LocatorsForAllTabsInProfilePage locatorsForAllTabsInProfilePage = new LocatorsForAllTabsInProfilePage();
     protected RegistrationPage registrationPage = new RegistrationPage();
     protected TabTraining tabTraining = new TabTraining();
+    protected TempMailPage tempMailPage = new TempMailPage();
+    protected DropMailPage dropMailPage = new DropMailPage();
+    protected PersonalCabinetPage personalCabinetPage = new PersonalCabinetPage();
 }

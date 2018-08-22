@@ -31,6 +31,10 @@ public class RegistrationPage {
         return $("[class=\"checkout-form-rules-field\"]");
     }
 
+    private SelenideElement linkUserAgreement() {
+        return $("[href=\"/oferta\"]");
+    }
+
     private SelenideElement submitButtonRegistrationPage() {
         return $("#reg-submit");
     }
@@ -49,6 +53,22 @@ public class RegistrationPage {
         }
         checkBoxIagreeRegistrationPage().scrollTo().click();
         submitButtonRegistrationPage().click();
+        return new RegistrationPage();
+    }
+
+    public RegistrationPage enterNameAndSurname(String name, String surname) {
+        nameFieldRegistrationPage().sendKeys(name);
+        surnameFieldRegistrationPage().sendKeys(surname);
+        return new RegistrationPage();
+    }
+
+    public RegistrationPage enterPhone(String phone) {
+        phoneFieldRegistrationPage().sendKeys(phone);
+        return new RegistrationPage();
+    }
+
+    public RegistrationPage ClickOnLinkUserAgreement() {
+        linkUserAgreement().click();
         return new RegistrationPage();
     }
 

@@ -22,13 +22,15 @@ public class LogInPage {
         return $("[type=\"submit\"]");
     }
 
-    public TabEditProfile enterDataOnLogInPageAndPressSubmit(String mail, String password) {
-        new MainPage().clickLogInButtonHeaderMainPage();
-        enterMailOnLogInPage().sendKeys(mail);
-        enterPasswordOnLogInPage().sendKeys(password);
-        submitButtonOnLogInPage().click();
-        return new TabEditProfile();
-    }
+    private SelenideElement linkForgetPassword() { return $("[href=\"/password-reset\"]"); }
+
+    private SelenideElement recoveryPageMailField() { return $(By.name("email")); }
+
+    private SelenideElement recoveryPageResetPassword() { return $("[type=\"submit\"]"); }
+
+    private SelenideElement linkGoToLogInPageThroughRecoveryPage()
+    { return $("[href=\"/login\"]"); }
+
 
     public TabEditProfile logInLikeTestUser() {
         new MainPage().clickLogInButtonHeaderMainPage();
@@ -82,6 +84,40 @@ public class LogInPage {
     public TabEditProfile setDefaultHeightOnTabMyDataPersonalCabinet(String s) {
         new TabEditProfile().heightFieldPersonalCabinet().setValue(s);
         return new TabEditProfile();
+    }
+
+    public LogInPage linkForgetPasswordClick() {
+        linkForgetPassword().click();
+        return new LogInPage();
+    }
+
+    public LogInPage enterRecoveryPageMailField(String mailRecovery) {
+        recoveryPageMailField().sendKeys(mailRecovery);
+        return new LogInPage();
+    }
+
+    public LogInPage clickButtonRecoveryPageResetPassword() {
+        recoveryPageResetPassword().click();
+        return new LogInPage();
+    }
+
+    public LogInPage fieldEnterNewPasswordOnRecoveryPageAndSubmit(String newPassRecovPage) {
+        enterPasswordOnLogInPage().sendKeys(newPassRecovPage);
+        submitButtonOnLogInPage().click();
+        return new LogInPage();
+    }
+
+    public LogInPage clickLinkGoToLogInPageThroughRecoveryPage() {
+        linkGoToLogInPageThroughRecoveryPage().click();
+        return new LogInPage();
+    }
+
+    public LogInPage enterNewMailAndPassAfterRecoveryAndSubmit(String mailRec, String passRec) {
+        new MainPage().clickLogInButtonHeaderMainPage();
+        enterMailOnLogInPage().setValue(mailRec);
+        enterPasswordOnLogInPage().setValue(passRec);
+        submitButtonOnLogInPage().click();
+        return new LogInPage();
     }
 
 }

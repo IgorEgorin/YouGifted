@@ -1,11 +1,7 @@
 package ru.yougifted.pagespackage;
 
-import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
-
-import java.io.File;
-import java.io.FileNotFoundException;
 
 import static com.codeborne.selenide.Selenide.$;
 
@@ -150,7 +146,7 @@ public class PersonalCabinetPage {
         return new PersonalCabinetPage();
     }
 
-    private SelenideElement logOutButtonPersonalCabinet() {
+    public SelenideElement logOutButtonPersonalCabinet() {
         return $("[class=\"button sing-in button-wrapper__button\"]");
     }
 
