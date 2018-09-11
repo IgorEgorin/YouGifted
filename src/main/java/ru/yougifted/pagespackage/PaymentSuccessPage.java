@@ -1,5 +1,6 @@
 package ru.yougifted.pagespackage;
 
+import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 
 import static com.codeborne.selenide.Selenide.$;
@@ -7,10 +8,10 @@ import static com.codeborne.selenide.Selenide.$;
 public class PaymentSuccessPage {
 
     private SelenideElement linkgoToPersonalCabinetonPaymentSuccessPage() {
-        return $("[class=\"center\"]");
+        return $("[href=\"/personal/payed\"]");
     }
 
     public void linkgoToPersonalCabinetOnPaymentSuccessPageClick() {
-        linkgoToPersonalCabinetonPaymentSuccessPage().click();
+        linkgoToPersonalCabinetonPaymentSuccessPage().shouldBe(Condition.visible).click();
     }
 }

@@ -1,16 +1,18 @@
+package ru.yougifted.uitest;
+
 import com.codeborne.selenide.Selenide;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import ru.yougifted.helperpackage.CsvDataProvider;
-import ru.yougifted.helperpackage.Precondition;
+import ru.yougifted.helperpackage.PreconditionTestNG;
 
 import java.util.Map;
 
-public class EditProfileTest extends Precondition {
+public class EditProfileTest extends PreconditionTestNG {
 
     @Test
     public void editNameTest() {
-//04082018
+
         String variableName = "Василий";
         String variableDefaultName = "Владимир";
 
@@ -196,7 +198,7 @@ public class EditProfileTest extends Precondition {
         System.out.println("AssertTrueEquals that new data of birth exist in field after saving and reloading page\n");
 
         Assert.assertTrue(variableBirth.equals(tabEditProfile.getAttributeBirthFieldPersonalCabinet())
-                , "\nNew data of birth is:" + " " + variableBirth + "\nData of birth inside field is:"
+                , "\nNew data of birth is:" + " " + variableBirth + "\nDataUserArray of birth inside field is:"
                         + " " + tabEditProfile.getAttributeBirthFieldPersonalCabinet());
 
         tabEditProfile.logOutButtonPersonalCabinetClick().logInLikeTestUser()
@@ -372,7 +374,7 @@ public class EditProfileTest extends Precondition {
 
 
         System.out.println("AssertFalseEquals that src path has difference before " +
-                "and after upload photo. Data is saved and page refresh\n");
+                "and after upload photo. DataUserArray is saved and page refresh\n");
 
         Assert.assertFalse(varSRCofPhotoBeforeLoad.equals(tabEditProfile.getPathToSRCinPersonalCabinet()),
                 "\nSrc before load is:" + " " + varSRCofPhotoBeforeLoad +

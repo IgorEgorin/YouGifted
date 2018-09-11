@@ -2,6 +2,7 @@ package ru.yougifted.pagespackage;
 
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
+import org.testng.Assert;
 
 import static com.codeborne.selenide.Selenide.$;
 
@@ -16,7 +17,7 @@ public class PersonalCabinetPage {
     }
 
     public String threeColumnTotalPriceOnHistoryPageTableInTabMyOrdersInPersonalCabinet() {
-        return $("[class=\"no-hover\"]",2).getText().replaceAll(",","")
+        return $(By.xpath("//tbody//td[3]")).getText().replaceAll(",","")
                 .replaceAll(" руб.","");
     }
 
@@ -206,6 +207,27 @@ public class PersonalCabinetPage {
     }
 
     public PersonalCabinetPage createAndFullFillDataAboutNewUser(){
+        return new PersonalCabinetPage();
+    }
+
+
+    public PersonalCabinetPage goToPersonalCabinetAndAssertTotalPrice(String totalPrice) {
+
+        System.out.println("\nGo to personal cabinet");
+
+        new PaymentSuccessPage().linkgoToPersonalCabinetOnPaymentSuccessPageClick();
+
+
+        System.out.println("\nAssert. Subscription price from main page equals price from personal cabinet page");
+
+
+        Assert.assertTrue(totalPrice.equals(
+                new PersonalCabinetPage().threeColumnTotalPriceOnHistoryPageTableInTabMyOrdersInPersonalCabinet()
+        ), "\nTotal price from main page is:" + " " + totalPrice
+                + "\nTotal price from personal cabinet is:" + " " + new PersonalCabinetPage()
+                .threeColumnTotalPriceOnHistoryPageTableInTabMyOrdersInPersonalCabinet());
+
+
         return new PersonalCabinetPage();
     }
 }

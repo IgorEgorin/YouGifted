@@ -18,8 +18,8 @@ public class LogInPage {
         return $(By.name("password"));
     }
 
-    private SelenideElement submitButtonOnLogInPage() {
-        return $("[type=\"submit\"]");
+    public SelenideElement submitButtonOnLogInPage() {
+        return $("[class=\"system-page-form-button\"]");
     }
 
     private SelenideElement linkForgetPassword() { return $("[href=\"/password-reset\"]"); }
@@ -112,8 +112,7 @@ public class LogInPage {
         return new LogInPage();
     }
 
-    public LogInPage enterNewMailAndPassAfterRecoveryAndSubmit(String mailRec, String passRec) {
-        new MainPage().clickLogInButtonHeaderMainPage();
+    public LogInPage enterMailAndPassAndSubmit(String mailRec, String passRec) {
         enterMailOnLogInPage().setValue(mailRec);
         enterPasswordOnLogInPage().setValue(passRec);
         submitButtonOnLogInPage().click();

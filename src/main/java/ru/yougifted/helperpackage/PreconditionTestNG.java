@@ -6,7 +6,7 @@ import io.github.bonigarcia.wdm.ChromeDriverManager;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
-public class Precondition extends InstanceForAllPages {
+public class PreconditionTestNG extends InstanceForAllPages {
 
 
     @BeforeMethod
@@ -14,7 +14,7 @@ public class Precondition extends InstanceForAllPages {
 
         ChromeDriverManager.getInstance().setup();
         Configuration.browser = "Chrome";
-        Configuration.timeout = 15000;
+        Configuration.timeout = 25000;
         Selenide.open("http://yg640.testing.place/");
 
 
@@ -24,7 +24,7 @@ public class Precondition extends InstanceForAllPages {
     public void quit() {
         Selenide.close();
     }
-//
+
 //    private WebDriver driver;
 //    public static final String USERNAME = "Alex23232222";
 //    public static final String ACCESS_KEY = "87a870b9-e730-42ca-adea-50dd3f7fd374";

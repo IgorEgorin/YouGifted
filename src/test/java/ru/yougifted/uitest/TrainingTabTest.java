@@ -1,17 +1,17 @@
+package ru.yougifted.uitest;
+
 import com.codeborne.selenide.Selenide;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import ru.yougifted.helperpackage.Precondition;
+import ru.yougifted.helperpackage.PreconditionTestNG;
 
 import java.util.Date;
 
-import static com.codeborne.selenide.Selenide.$;
-
-public class TrainingTabTest extends Precondition {
+public class TrainingTabTest extends PreconditionTestNG {
 
     @Test
     public void testName() throws Exception {
-        //11082018
+
 
         String varName = "Александр";
         String varSurname = "Владимиров";
@@ -28,11 +28,9 @@ public class TrainingTabTest extends Precondition {
         System.out.println("\nCheck that Done button is red");
 
 
-        Thread.sleep(5555555);
         Assert.assertTrue(tabTraining.checkColorButtonDoneRedAndEnableToPushOnTabTraining().exists()
                 ,"Red button does not found");
 
-//        Thread.sleep(500000);
 
         tabTraining.buttonDoneTabTrainingClick();
 

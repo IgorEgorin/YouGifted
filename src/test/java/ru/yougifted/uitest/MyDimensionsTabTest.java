@@ -1,16 +1,18 @@
+package ru.yougifted.uitest;
+
 import com.codeborne.selenide.Selenide;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import ru.yougifted.helperpackage.CsvDataProvider;
-import ru.yougifted.helperpackage.Precondition;
+import ru.yougifted.helperpackage.PreconditionTestNG;
 
 import java.util.Map;
 
-public class MyDimensionsTabTest extends Precondition {
+public class MyDimensionsTabTest extends PreconditionTestNG {
 
     @Test(dataProvider = "CsvDataProvider", dataProviderClass = CsvDataProvider.class)
     public void editClientDimensions(Map<String, String> testData) throws Exception {
-//0408
+
         String varWeight = testData.get("weight");
         String varWaist = testData.get("waist");
         String varHipcircumference = testData.get("hipcircumference");
@@ -27,8 +29,6 @@ public class MyDimensionsTabTest extends Precondition {
                 varWeight,varWaist,varHipcircumference,varChestgirth,varLeftarm,varRightarm,varLeftleg,varRightleg);
 
 
-
-
         Selenide.refresh();
 
 
@@ -39,10 +39,7 @@ public class MyDimensionsTabTest extends Precondition {
 
         Assert.assertTrue(varWeight.equals(tabMyDimensions.weightFieldInResultTableOnTabMyDimensions()),
                 "\nTest variable is:" + " " + varWeight +
-                    "\nData in weight field is:" + " " + tabMyDimensions.weightFieldInResultTableOnTabMyDimensions());
-
-
-
+                    "\nDataUserArray in weight field is:" + " " + tabMyDimensions.weightFieldInResultTableOnTabMyDimensions());
 
 
 
@@ -54,7 +51,7 @@ public class MyDimensionsTabTest extends Precondition {
 
         Assert.assertTrue(varWaist.equals(tabMyDimensions.waistFieldInResultTableOnTabMyDimensions()),
                 "\nTest variable is:" + " " + varWaist +
-                        "\nData in waist field is:" + " " + tabMyDimensions.waistFieldInResultTableOnTabMyDimensions());
+                        "\nDataUserArray in waist field is:" + " " + tabMyDimensions.waistFieldInResultTableOnTabMyDimensions());
 
 
 
@@ -68,7 +65,7 @@ public class MyDimensionsTabTest extends Precondition {
 
         Assert.assertTrue(varHipcircumference.equals(tabMyDimensions.hipCircumferenceFieldInResultTableOnTabMyDimensions()),
                 "\nTest variable is:" + " " + varHipcircumference +
-                        "\nData in hip circumference field is:" + " " + tabMyDimensions
+                        "\nDataUserArray in hip circumference field is:" + " " + tabMyDimensions
                         .hipCircumferenceFieldInResultTableOnTabMyDimensions());
 
 
@@ -85,7 +82,7 @@ public class MyDimensionsTabTest extends Precondition {
 
         Assert.assertTrue(varChestgirth.equals(tabMyDimensions.chestGirthFieldInResultTableOnTabMyDimensions()),
                 "\nTest variable is:" + " " + varChestgirth +
-                        "\nData in chest girth field is:" + " " + tabMyDimensions
+                        "\nDataUserArray in chest girth field is:" + " " + tabMyDimensions
                         .chestGirthFieldInResultTableOnTabMyDimensions());
 
 
@@ -101,7 +98,7 @@ public class MyDimensionsTabTest extends Precondition {
 
         Assert.assertTrue(varLeftarm.equals(tabMyDimensions.leftArmFieldInResultTableOnTabMyDimensions()),
                 "\nTest variable is:" + " " + varLeftarm +
-                        "\nData in left arm field is:" + " " + tabMyDimensions
+                        "\nDataUserArray in left arm field is:" + " " + tabMyDimensions
                         .leftArmFieldInResultTableOnTabMyDimensions());
 
 
@@ -114,7 +111,7 @@ public class MyDimensionsTabTest extends Precondition {
 
         Assert.assertTrue(varRightarm.equals(tabMyDimensions.rightArmFieldInResultTableOnTabMyDimensions()),
                 "\nTest variable is:" + " " + varRightarm +
-                        "\nData in right arm field is:" + " " + tabMyDimensions
+                        "\nDataUserArray in right arm field is:" + " " + tabMyDimensions
                         .rightArmFieldInResultTableOnTabMyDimensions());
 
 
@@ -127,7 +124,7 @@ public class MyDimensionsTabTest extends Precondition {
 
         Assert.assertTrue(varLeftleg.equals(tabMyDimensions.leftLegFieldInResultTableOnTabMyDimensions()),
                 "\nTest variable is:" + " " + varLeftleg +
-                        "\nData in left leg field is:" + " " + tabMyDimensions
+                        "\nDataUserArray in left leg field is:" + " " + tabMyDimensions
                         .leftLegFieldInResultTableOnTabMyDimensions());
 
 
@@ -143,7 +140,7 @@ public class MyDimensionsTabTest extends Precondition {
 
         Assert.assertTrue(varRightleg.equals(tabMyDimensions.rightLegFieldInResultTableOnTabMyDimensions()),
                 "\nTest variable is:" + " " + varRightleg +
-                        "\nData in right leg field is:" + " " + tabMyDimensions
+                        "\nDataUserArray in right leg field is:" + " " + tabMyDimensions
                         .rightLegFieldInResultTableOnTabMyDimensions());
 
 

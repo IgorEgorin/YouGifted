@@ -1,5 +1,6 @@
 package ru.yougifted.pagespackage;
 
+import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
 
@@ -151,7 +152,7 @@ public class TabEditProfile {
     }
 
     public SelenideElement logOutButtonPersonalCabinet() {
-        return $("[class=\"button sing-in button-wrapper__button\"]");
+        return $("[class=\"button sing-in button-wrapper__button\"]").shouldBe(Condition.visible);
     }
 
     public LogInPage logOutButtonPersonalCabinetClick() {

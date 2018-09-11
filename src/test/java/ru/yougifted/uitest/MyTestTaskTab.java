@@ -1,11 +1,13 @@
+package ru.yougifted.uitest;
+
 import com.codeborne.selenide.Selenide;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import ru.yougifted.helperpackage.Precondition;
+import ru.yougifted.helperpackage.PreconditionTestNG;
 
 import static com.codeborne.selenide.Selenide.$;
 
-public class MyTestTaskTab extends Precondition {
+public class MyTestTaskTab extends PreconditionTestNG {
 
     @Test
     public void editAmmountOfPushUp() throws Exception{
@@ -38,23 +40,6 @@ public class MyTestTaskTab extends Precondition {
 
         tabMyTestTasks
                 .tabMyTestTaskLinkClick();
-
-//        System.out.println("AssertTrueEquals that number of push ups does not change " +
-//                "after logout\n");
-//
-//
-//        Assert.assertTrue(varAmmountPushUp.equals(tabMyTestTasks.ammountOfPushUpField()),"" +
-//                "\nTest variable is:" + " " + varAmmountPushUp +
-//                "\nAmmount of pusp ups on tab is:" + " " + tabMyTestTasks.ammountOfPushUpField());
-//
-//
-//        System.out.println("Assert that push up video link is exist in html after logout\n");
-//
-//        Assert.assertTrue($("[href=\""+varVideoLinkPushUp+"\"]").exists());
-//
-//        System.out.println("Test that pusp up link above diagram is clickable");
-//
-//        tabMyTestTasks.pushUpLinkAboveDiagramClick();
 
         System.out.println("\nSet default number and link in push up fields");
 
@@ -98,24 +83,6 @@ public class MyTestTaskTab extends Precondition {
 
         tabMyTestTasks
                 .tabMyTestTaskLinkClick();
-
-//        System.out.println("AssertTrueEquals that number of squat does not change " +
-//                "after logout\n");
-//
-//        Assert.assertTrue(varAmmountSquat.equals(tabMyTestTasks.ammountOfSquatField()),"" +
-//                "\nTest variable is:" + " " + varAmmountSquat +
-//                "\nAmmount of squat on tab is:" + " " + tabMyTestTasks.ammountOfSquatField());
-//
-//        System.out.println("Assert that squat video link is exist in html after logout\n");
-//
-//
-//        Assert.assertTrue(
-//                $("[href=\""+varVideoLinkSquat+"\"]").exists());
-//
-//
-//        System.out.println("Test that squat link above diagram is clickable");
-//
-//        tabMyTestTasks.squatLinkAboveDiagramClick();
 
 
         System.out.println("\nSet default number and link in squat fields");
@@ -166,27 +133,6 @@ public class MyTestTaskTab extends Precondition {
         tabMyTestTasks
                 .tabMyTestTaskLinkClick();
 
-//        System.out.println("AssertTrueEquals that number of minutes does not change " +
-//                "after logout\n");
-//
-//        Assert.assertTrue(varPlanckMin.equals(tabMyTestTasks.ammountOfPlanckMinuteField()),"" +
-//                "\nTest variable contains minutes:" + " " + varPlanckMin +
-//                "\nAmmount of minutes on tab is:" + " " + tabMyTestTasks.ammountOfPlanckMinuteField());
-//
-//        System.out.println("AssertTrueEquals that number of seconds does not change " +
-//                "after logout\n");
-//
-//        Assert.assertTrue(varPlanckSec.equals(tabMyTestTasks.ammountOfPlanckSecondField()),"" +
-//                "\nTest variable contains seconds:" + " " + varPlanckSec +
-//                "\nAmmount of seconds on tab is:" + " " + tabMyTestTasks.ammountOfPlanckSecondField());
-//
-//        System.out.println("Assert that planck video link is exist in html after logout\n");
-//
-//        Assert.assertTrue($("[href=\""+varVideoLinkPlanck+"\"]").exists());
-//
-//        System.out.println("Test that planck link above diagram is clickable");
-//
-//        tabMyTestTasks.planckLinkAboveDiagramClick();
 
         System.out.println("\nSet default number and link in planck fields");
 
